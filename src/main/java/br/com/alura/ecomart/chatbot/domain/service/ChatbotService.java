@@ -28,4 +28,7 @@ public class ChatbotService {
     }
 
 
+    public void limaparHistorico() {
+        client.apagarThread();
+    }
 }

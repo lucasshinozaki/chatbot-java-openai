@@ -36,7 +36,8 @@ public class ChatController {
 
     @GetMapping("limpar")
     public String limparConversa() {
-        return PAGINA_CHAT;
+        service.limaparHistorico();
+        return "redirect:/chat";
     }
 
 }
